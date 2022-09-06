@@ -1,0 +1,47 @@
+.hero-section {
+    width: 100vw;
+    height: 674px;
+    background: #dceaf5;
+    .text_primary {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        color: #1d3444;
+    }
+    .text_secondary {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #5b5b5b;
+    }
+    .text_tertiary {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: rgba(57, 65, 73, 0.5);
+    }
+    .services_font {
+        font-weight: 600;
+        font-size: 16px;
+        // line-height: 106.5%;
+        color: #1d3444;
+    }
+    .services_btn {
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        background: #f58a07;
+        border-radius: 27px;
+    }
+    .img-fluid{
+        max-width: 100%;
+        height: auto;
+    }
+    .icon-padding{
+        padding: 0 30px;
+    }
+}
+body, html{
+    overflow-x: hidden;
+}

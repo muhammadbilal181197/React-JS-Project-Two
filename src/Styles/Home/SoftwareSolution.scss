@@ -1,0 +1,43 @@
+.Software {
+    width: 100vw;
+    height: 665px;
+
+    background-color: #edf7ff;
+    .text_primary {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        color: #0d1317;
+    }
+    .text_secondary {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #1d3444;
+    }
+    .card_heading {
+        font-weight: 600;
+        font-size: 24px;
+        color: #0d1317;
+    }
+    .card_tagline {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #5b5b5b;
+    }
+    .img-fluid {
+        max-width: 34px;
+        height: 33px;
+        padding: 20px 0px 35px 0px;
+    }
+    .card-content.MuiCardContent-root {
+        padding: 20px 20px 40px 35px;
+    }
+    .card.MuiCard-root{
+        border-radius: 20px;
+        // width: 400px;
+        background-color: #FFFFFF;
+        box-shadow: none;
+    }
+}

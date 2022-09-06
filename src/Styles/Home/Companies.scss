@@ -1,0 +1,43 @@
+.Companies {
+    .text_primary {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: #1d3444;
+        max-width: 62%;
+    }
+    .text_secondary {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #5b5b5b;
+        max-width: 64%;
+    }
+    .card {
+        box-shadow: none;
+        .MuiCardContent-root {
+            padding: 20px 0;
+        }
+    }
+    .card_heading {
+        font-weight: 500;
+        font-size: 24px;
+        color: #0d1317;
+    }
+    .card_tagline {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #5b5b5b;
+    }
+    .card-action.MuiCardActions-root {
+        padding: 0;
+    }
+    .btn.MuiButton-root {
+        padding: 0;
+        text-transform: unset;
+        font-weight: 500;
+        font-size: 16px;
+        color: #f58a07;
+    }
+}
