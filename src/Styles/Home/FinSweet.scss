@@ -1,0 +1,33 @@
+.FinSweet {
+    .text_primary {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: #0d1317;
+        max-width: 90%;
+    }
+    .text_secondary {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #5b5b5b;
+        max-width: 90%;
+    }
+    .ceo_name {
+        font-weight: 500;
+        font-size: 24px;
+        color: #063255;
+    }
+    .ceo_at {
+        font-weight: 500;
+        font-size: 18px;
+        color: #f58a07;
+    }
+    iframe {
+        border-radius: 20px;
+    }
+    .iframe {
+        display: flex;
+        justify-content: center;
+    }
+}

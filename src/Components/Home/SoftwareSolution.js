@@ -1,4 +1,4 @@
-import { Box, Typography, Container, Grid, Card, CardActionArea, CardMedia, CardContent } from "@mui/material";
+import { Box, Typography, Container, Grid, Card, CardActionArea, CardContent } from "@mui/material";
 import React from "react";
 import "../../Styles/Home/SoftwareSolution.scss";
 import icon1 from "../../Images/cube-icon.svg";
@@ -25,7 +25,7 @@ const card = [
 
 const SoftwareSolution = () => {
     return (
-        <Box className="Software" sx={{ mt: 10, mb: 10 }}>
+        <Box className="Software" sx={{ mt: 10, mb: 10, display: "flex", justifyContent: "center", alignItems: "center" }}>
             <Container>
                 <Grid container>
                     <Grid item xs={6.5}>
@@ -40,7 +40,7 @@ const SoftwareSolution = () => {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={3} sx={{ pt: 5 }}>
+                <Grid container spacing={4} sx={{ pt: 5 }}>
                     {card.map((value) => (
                         <Grid item xs={4}>
                             <Card sx={{}} className="card">

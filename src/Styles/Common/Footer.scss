@@ -1,0 +1,63 @@
+.Footer {
+    background-color: #063255;
+    // height: 463px;
+    position: relative;
+    .Foot {
+        height: 463px;
+    }
+    .icon1,
+    .icon2 {
+        position: absolute;
+        z-index: 1000;
+    }
+    .icon2 {
+        right: 0;
+        top: 40px;
+    }
+    .icon1 {
+        bottom: 0;
+    }
+    .text_primary {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        color: #ffffff;
+    }
+    .footer_heading {
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    .footer_tagline {
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .Input {
+        background-color: #ffffff;
+        border-radius: 31px;
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        border: none;
+        width: 342px;
+        height: 54px;
+        padding-left: 30px;
+        outline: none;
+    }
+    Input::placeholder {
+        color: #9c9c9c;
+    }
+    .btn {
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: unset;
+        color: #ffffff;
+        background: #f58a07;
+        border-radius: 31px;
+        padding: 12px 25px;
+    }
+    .btn:hover{
+        background-color: #f58a07;
+    }
+}

@@ -35,7 +35,7 @@ const Companies = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.
                 </Typography>
 
-                <Grid container spacing={5} sx={{ pt: 5 }}>
+                <Grid container spacing={4} sx={{ pt: 5 }}>
                     {card.map((value) => (
                         <Grid item xs={4}>
                             <Card sx={{}} className="card">

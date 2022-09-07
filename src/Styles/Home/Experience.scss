@@ -1,0 +1,27 @@
+.Experience {
+    .bg-orange {
+        background-color: #f58a07;
+        height: 518px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text_primary {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: #ffffff;
+        max-width: 60%;
+    }
+    .btn1 {
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: unset;
+        color: #f58a07;
+        background-color: #ffffff;
+        border-radius: 31px;
+    }
+    .btn1:hover{
+        background-color: #ffffff;
+    }
+}

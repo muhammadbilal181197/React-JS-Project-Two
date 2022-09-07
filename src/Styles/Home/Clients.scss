@@ -1,0 +1,56 @@
+.Client {
+    .Clients {
+        position: relative;
+        height: 682px;
+        background: #edf7ff;
+        border-radius: 20px;
+        .rebon {
+            position: absolute;
+            z-index: 1000;
+            // right: 0;
+            top: -15px;
+            right: -15px;
+        }
+    }
+    .font-size {
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: unset;
+        border-radius: 31px;
+    }
+    .btn1 {
+        background-color: #ffffff;
+        color: #f58a07;
+    }
+    .btn2,
+    .btn3 {
+        color: rgba(6, 50, 85, 0.3);
+        border: 1px solid #a8bccc;
+    }
+    .text_primary {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: #0d1317;
+        max-width: 90%;
+    }
+    .text_secondary {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #5b5b5b;
+        max-width: 83%;
+    }
+    .text_services {
+        font-weight: 500;
+        font-size: 16px;
+        color: #f58a07;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+    }
+    .img-fluid {
+        margin-left: 8px;
+    }
+}
