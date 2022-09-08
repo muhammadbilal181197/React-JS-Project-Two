@@ -1,6 +1,5 @@
 .News {
     width: 100vw;
-    height: 720px;
     background-color: #dceaf5;
     .text_primary {
         font-weight: 600;
@@ -25,7 +24,36 @@
         font-size: 16px;
         color: #f58a07;
     }
-    .card.MuiCard-root{
+    .card.MuiCard-root {
         border-radius: 20px;
+    }
+}
+@media (max-width: 1536px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 900px) {
+    .News {
+        .text_primary {
+            font-size: 40px;
+            max-width: 100%;
+            text-align: center;
+        }
+        .text_secondary {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .News {
+        .text_primary {
+            font-size: 35px;
+        }
+        .card-action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

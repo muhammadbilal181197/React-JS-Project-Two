@@ -29,22 +29,22 @@ const card = [
 const News = () => {
     return (
         <Box className="News" sx={{ display: "flex", justifyContent: "center", alignItems:"center" }}>
-            <Container>
-                <Typography variant="h2" className="font_poppins text_primary" sx={{ mb: 3 }}>
+            <Container sx={{my:"5%"}}>
+                <Typography variant="h2" className="font_poppins text_primary" sx={{ mb:{lg: 3} }}>
                     Latest Blog & News
                 </Typography>
 
                 <Grid container spacing={4} sx={{ pt: 5 }}>
                     {card.map((value) => (
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={4}>
                             <Card sx={{}} className="card">
                                 <CardActionArea>
                                     <CardMedia component="img" image={value.icon} alt="card-icon" />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h1" component="div" className="card_heading font_poppins">
+                                        <Typography gutterBottom variant="h1" component="div" className="card_heading font_poppins" sx={{textAlign:{xs:"center", sm:"start"}}}>
                                             {value.heading}
                                         </Typography>
-                                        <Typography variant="body2" className="card_tagline font_poppins">
+                                        <Typography variant="body2" className="card_tagline font_poppins" sx={{textAlign:{xs:"center", sm:"start"}}}>
                                             {value.tagline}
                                         </Typography>
                                     </CardContent>

@@ -26,9 +26,9 @@ const card = [
 
 const Companies = () => {
     return (
-        <Box className="Companies" sx={{ mt: 10, mb: 10 }}>
+        <Box className="Companies" sx={{ mt:{xs:5 ,lg:10}, mb: 10 }}>
             <Container>
-                <Typography variant="h2" className="font_poppins text_primary" sx={{ mb: 3 }}>
+                <Typography variant="h2" className="font_poppins text_primary" sx={{ mb: {xs:2,md:3} }}>
                     We help more than 1500 companies from all sectors
                 </Typography>
                 <Typography variant="h3" className="font_poppins text_secondary">
@@ -37,20 +37,20 @@ const Companies = () => {
 
                 <Grid container spacing={4} sx={{ pt: 5 }}>
                     {card.map((value) => (
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={4}>
                             <Card sx={{}} className="card">
                                 <CardActionArea>
                                     <CardMedia component="img" image={value.icon} alt="card-icon" />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div" className="card_heading font_poppins">
+                                        <Typography gutterBottom variant="h5" component="div" className="card_heading font_poppins" sx={{textAlign:{xs:"center", sm:"start"}}}>
                                             {value.heading}
                                         </Typography>
-                                        <Typography variant="body2" className="card_tagline font_poppins">
+                                        <Typography variant="body2" className="card_tagline font_poppins" sx={{textAlign:{xs:"center", sm:"start"}}}>
                                             {value.tagline}
                                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
-                                <CardActions className="card-action">
+                                <CardActions className="card-action" >
                                     <Button className="btn font_poppins" sx={{ mr: 1.5 }}>
                                         Learn More
                                     </Button>

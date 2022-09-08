@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AppBar, Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, IconButton, Toolbar, Typography, Button, Grid, Container } from "@mui/material";
+import { AppBar, Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, IconButton, Toolbar, Button, Grid, Container } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../../Images/Logo.svg";
 import "../../Styles/Common/NavBar.scss";
@@ -17,9 +17,9 @@ function NavBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                Pro Edu
-            </Typography>
+            <Box sx={{ my: 2 }}>
+            <img src={logo} alt="navbar_logo" />
+            </Box>
             <Divider />
             <List>
                 {navItems.map((item) => (
@@ -30,9 +30,9 @@ function NavBar(props) {
                     </ListItem>
                 ))}
             </List>
-            <Grid item xs={4} sx={{ display: "flex", justifyContent: "center" }}>
-                <Button variant="outlined" className="font_poppins register_btn" sx={{ display: { xs: "block", sm: "none" } }}>
-                    Register
+            <Grid item xs={4} sx={{ display: "flex", justifyContent: "center" }} className="hidden">
+                <Button variant="outlined" className="font_poppins clone_btn" sx={{ display: { xs: "block", sm: "none" } }}>
+                    Clone Project
                 </Button>
             </Grid>
         </Box>
@@ -46,9 +46,7 @@ function NavBar(props) {
                 <Container>
                     <Toolbar className="navbar" style={{ padding: 0 }}>
                         <Grid item xs={2}>
-                            {/* <Typography aphy className="font_poppins brand_name" variant="h6"  component="div" sx={{ flexGrow: 1, display: { xs: "block" }}}> */}
                             <img src={logo} alt="navbar_logo" />
-                            {/* </Typography> */}
                         </Grid>
                         <Grid item xs={6} sx={{ ml: "auto" }}>
                             <Box className="nav" sx={{ display: { xs: "none", md: "block" } }}>

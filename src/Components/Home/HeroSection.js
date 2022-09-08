@@ -10,18 +10,18 @@ import main from "../../Images/main1.png";
 const HeroSection = () => {
     return (
         <Box className="hero-section">
-            <Container sx={{ pt: "4%" }}>
+            <Container sx={{ pt: { xs: "1%", lg: "4%" } }}>
                 <Grid container>
-                    <Grid item xs={6}>
-                        <Box>
-                            <Typography variant="h1" sx={{ my: 4 }} className="font_poppins text_primary">
+                    <Grid item xs={12} lg={6}>
+                        <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "center", lg: "normal" } }}>
+                            <Typography variant="h1" className="font_poppins text_primary" sx={{ my:{ xs:1.5,lg:4}, textAlign: { xs: "center", lg: "start" } }}>
                                 Prosper with our bespoke solutions
                             </Typography>
-                            <Typography variant="h2" sx={{ mb: 5 }} className="font_poppins text_secondary">
+                            <Typography  variant="h2" sx={{ mb: {xs:3,lg:5},  textAlign: { xs: "center", lg: "start" }}} className="font_poppins text_secondary">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
                             </Typography>
-                            <Box sx={{ display: "flex", alignItems: "center", mb: 7 }}>
-                                <Button variant="contained" className="font_poppins services_btn" sx={{ mr: 3.5 }}>
+                            <Box sx={{ display: "flex", alignItems: "center", mb:{ xs:3,lg:7}, flexDirection:{xs:"column" , sm:"row"} }}>
+                                <Button variant="contained" className="font_poppins services_btn" sx={{ mr:{sm:3.5}, mb:{xs:2, sm:0} }}>
                                     See our services
                                 </Button>
                                 <Typography variant="h2" className="font_poppins services_font">
@@ -31,15 +31,23 @@ const HeroSection = () => {
                             <Typography variant="h2" sx={{ mb: 3 }} className="text_tertiary font_poppins">
                                 Worked with 100+ Companies
                             </Typography>
-                            <Box>
-                                <img src={icon1} alt="logo icon" />
-                                <img src={icon2} alt="logo icon" className="icon-padding" />
-                                <img src={icon3} alt="logo icon" />
+                            <Box sx={{ mb: { xs: "5%", lg: "20%" } }}>
+                                <Grid container>
+                                    <Grid item xs={12} lg={4} align="center">
+                                        <img src={icon1} alt="logo icon" />
+                                    </Grid>
+                                    <Grid item xs={12} lg={4} align="center" sx={{my:{xs:"5%", lg:"0"}}}>
+                                        <img src={icon2} alt="logo icon" className="icon-padding" />
+                                    </Grid>
+                                    <Grid item xs={12} lg={4} align="center">
+                                        <img src={icon3} alt="logo icon" />
+                                    </Grid>
+                                </Grid>
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid itme xs={6} >
-                        <img src={main} alt="man-icon" className="" />
+                    <Grid itme xs={12} lg={6} sx={{ display: "flex", justifyContent: { xs: "center", xl: "normal" } }}>
+                        <img src={main} alt="man-icon" className="img-fluid img1" />
                     </Grid>
                 </Grid>
             </Container>

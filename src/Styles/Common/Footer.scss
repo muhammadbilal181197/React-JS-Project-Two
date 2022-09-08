@@ -2,9 +2,6 @@
     background-color: #063255;
     // height: 463px;
     position: relative;
-    .Foot {
-        height: 463px;
-    }
     .icon1,
     .icon2 {
         position: absolute;
@@ -57,7 +54,37 @@
         border-radius: 31px;
         padding: 12px 25px;
     }
-    .btn:hover{
+    .btn:hover {
         background-color: #f58a07;
+    }
+}
+@media (max-width: 1536px) {
+    .Footer{
+        .icon1, .icon2{
+            display: none;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    
+}
+@media (max-width: 900px) {
+    .Footer {
+        .text_primary {
+            font-size: 40px;
+            max-width: 100%;
+            text-align: center;
+        }
+        .text_secondary {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .Footer {
+        .text_primary {
+            font-size: 35px;
+        }
     }
 }

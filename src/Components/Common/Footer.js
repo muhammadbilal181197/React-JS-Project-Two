@@ -15,9 +15,9 @@ const Footer = () => {
             <img src={icon1} alt="icon left" className="icon1" />
             <img src={icon2} alt="icon right" className="icon2" />
             <Box className="Foot" sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <Container>
+                <Container sx={{ my: "4%" }}>
                     <Grid container sx={{ pb: "6%" }}>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} lg={4} sx={{ display: "flex", justifyContent: "center", alignItems: { xs: "center", lg: "start" }, flexDirection: "column", pb: { xs: 8, lg: "0" } }}>
                             <Box>
                                 <img src={logo} alt="brand-icon" />
                             </Box>
@@ -39,8 +39,8 @@ const Footer = () => {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xs={2}>
-                            <Typography variant="h6" className="font_poppins footer_heading" sx={{ mb: "18%" }}>
+                        <Grid item xs={12} sm={6} lg={2} sx={{ display: "flex", flexDirection: "column", alignItems: {xs:"center",lg:"start"}, pb:{xs:2.5,sm:0} }}>
+                            <Typography variant="h6" className="font_poppins footer_heading" sx={{ mb: { lg: "18%", xs: "8%" } }}>
                                 Company
                             </Typography>
                             <Typography variant="body2" className="font_poppins footer_tagline" sx={{ mb: "8%" }}>
@@ -56,8 +56,8 @@ const Footer = () => {
                                 Blog
                             </Typography>
                         </Grid>
-                        <Grid item xs={2}>
-                            <Typography variant="h6" className="font_poppins footer_heading" sx={{ mb: "18%" }}>
+                        <Grid item xs={12} sm={6} lg={2} sx={{ display: "flex", flexDirection: "column", alignItems: {xs:"center",lg:"start"},pb:{xs:2.5,sm:0} }}>
+                            <Typography variant="h6" className="font_poppins footer_heading" sx={{ mb: { lg: "18%", xs: "8%" } }}>
                                 Connect
                             </Typography>
                             <Typography variant="body2" className="font_poppins footer_tagline" sx={{ mb: "8%" }}>
@@ -67,11 +67,11 @@ const Footer = () => {
                                 +(123) 456-7890
                             </Typography>
                         </Grid>
-                        <Grid item xs={4}>
-                            <Typography variant="h6" className="font_poppins footer_heading" sx={{ mb: "10%" }}>
+                        <Grid item xs={12} lg={4} sx={{ display: "flex", flexDirection: "column", alignItems: {xs:"center",lg:"start"},pb:{xs:2.5,sm:0} }}>
+                            <Typography variant="h6" className="font_poppins footer_heading" sx={{ mb: {lg:"10%", xs:"4%"} }}>
                                 Join Newsletter
                             </Typography>
-                            <Box sx={{ mb: "5%" }}>
+                            <Box sx={{ mb: {lg:"5%",xs:"3%"} }}>
                                 <input type="text" placeholder="Type email here" className="font_poppins Input" />
                             </Box>
                             <Box>
@@ -81,14 +81,14 @@ const Footer = () => {
                             </Box>
                         </Grid>
                     </Grid>
-                    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                    <Box sx={{ display: "flex", justifyContent: "space-between",flexDirection:{xs:"column-reverse", lg:"row" , alignItems:"center"} }}>
                         <Box>
                             <Typography variant="body2" className="font_poppins footer_tagline">
                                 © All rights reserved – Finsweet
                             </Typography>
                         </Box>
-                        <Box sx={{ display: "flex", pr: "8%" }}>
-                            <Typography variant="body2" className="font_poppins footer_tagline">
+                        <Box sx={{ display: "flex", pb:{lg:"0",xs:2} }}>
+                            <Typography variant="body2" className="font_poppins footer_tagline" sx={{pr:{lg:10, xs:3}}}>
                                 Privacy Policy
                             </Typography>
                             <Typography variant="body2" className="font_poppins footer_tagline">

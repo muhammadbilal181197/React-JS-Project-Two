@@ -1,12 +1,11 @@
 .Software {
     width: 100vw;
-    height: 665px;
+    height: auto;
 
     background-color: #edf7ff;
     .text_primary {
         font-weight: 600;
         font-size: 36px;
-        line-height: 44px;
         color: #0d1317;
     }
     .text_secondary {
@@ -34,10 +33,35 @@
     .card-content.MuiCardContent-root {
         padding: 20px 20px 40px 35px;
     }
-    .card.MuiCard-root{
+    .card.MuiCard-root {
         border-radius: 20px;
         // width: 400px;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         box-shadow: none;
+    }
+}
+
+@media (max-width: 1536px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 900px) {
+    .Software {
+        .text_primary {
+            font-size: 35px;
+            max-width: 100%;
+            text-align: center;
+        }
+        .text_secondary {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .Software {
+        .text_primary {
+            font-size: 35px;
+        }
     }
 }

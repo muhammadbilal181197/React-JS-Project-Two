@@ -25,15 +25,15 @@ const card = [
 
 const SoftwareSolution = () => {
     return (
-        <Box className="Software" sx={{ mt: 10, mb: 10, display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <Container>
+        <Box className="Software" sx={{ mt: 10, display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <Container sx={{my:"5%"}}>
                 <Grid container>
-                    <Grid item xs={6.5}>
-                        <Typography variant="h2" className="font_poppins text_primary" sx={{ mb: 3 }}>
+                    <Grid item xs={12} md={6.5}>
+                        <Typography variant="h2" className="font_poppins text_primary" sx={{ mb: {xs:2,md:3} }}>
                             We are building software solution that solves your business challenges
                         </Typography>
                     </Grid>
-                    <Grid item xs={5.5}>
+                    <Grid item xs={12} md={5.5}>
                         <Typography variant="body1" className="font_poppins text_secondary">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.
                         </Typography>
@@ -42,7 +42,7 @@ const SoftwareSolution = () => {
 
                 <Grid container spacing={4} sx={{ pt: 5 }}>
                     {card.map((value) => (
-                        <Grid item xs={4}>
+                        <Grid  item xs={12} md={4}>
                             <Card sx={{}} className="card">
                                 <CardActionArea>
                                     <CardContent className="card-content">
