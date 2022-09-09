@@ -5,7 +5,7 @@ import experience from "../../Images/experience.svg";
 
 const Experience = () => {
     return (
-        <Box className="Experience ">
+        <Box className="Experience" sx={{mt:{xs:5,lg:10}}}>
             <Grid container sx={{display:"flex", justifyContent:"center"}}>
                 <Grid item xs={12} lg={6}>
                     <Box sx={{display:"flex"}}>

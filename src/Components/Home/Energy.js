@@ -5,12 +5,12 @@ import girlicon from "../../Images/main-girl.png"
 
 const Energy = () => {
     return (
-        <Box className="Energy">
+        <Box className="Energy" sx={{mt:{xs:5, lg:"0"}}}>
             <Container>
                 <Grid container sx={{alignItems:"flex-end"}}>
                     <Grid itme xs={12} lg={6}>
                         <Box sx={{mb:"2%"}}>
-                            <Typography variant="h1" className="font_poppins text_primary" sx={{mt:{xs:"5%",lg:"18%"}, mb:{xs:2,lg:"4%"}}}>
+                            <Typography variant="h1" className="font_poppins text_primary" sx={{mt:{md:"5%",lg:"18%"}, mb:{xs:2,lg:"4%"}}}>
                                 The energy of a start-up combined with 30 years of experience.
                             </Typography>
                             <Typography variant="body1" className="font_poppins text_secondary" sx={{mb:{xs:"5%",lg:"7%"}}}>

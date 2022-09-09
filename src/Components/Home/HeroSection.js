@@ -10,17 +10,17 @@ import main from "../../Images/main1.png";
 const HeroSection = () => {
     return (
         <Box className="hero-section">
-            <Container sx={{ pt: { xs: "1%", lg: "4%" } }}>
+            <Container sx={{ pt: { xs: "5%", sm: "2%" } }}>
                 <Grid container>
                     <Grid item xs={12} lg={6}>
                         <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "center", lg: "normal" } }}>
-                            <Typography variant="h1" className="font_poppins text_primary" sx={{ my:{ xs:1.5,lg:4}, textAlign: { xs: "center", lg: "start" } }}>
+                            <Typography variant="h1" className="font_poppins text_primary" sx={{ my:{ xs:1.5,lg:2}, textAlign: { xs: "center", lg: "start" } }}>
                                 Prosper with our bespoke solutions
                             </Typography>
-                            <Typography  variant="h2" sx={{ mb: {xs:3,lg:5},  textAlign: { xs: "center", lg: "start" }}} className="font_poppins text_secondary">
+                            <Typography  variant="h2" sx={{ mb: {xs:3,lg:3},  textAlign: { xs: "center", lg: "start" }}} className="font_poppins text_secondary">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
                             </Typography>
-                            <Box sx={{ display: "flex", alignItems: "center", mb:{ xs:3,lg:7}, flexDirection:{xs:"column" , sm:"row"} }}>
+                            <Box sx={{ display: "flex", alignItems: "center", mb:{ xs:3,lg:5}, flexDirection:{xs:"column" , sm:"row"} }}>
                                 <Button variant="contained" className="font_poppins services_btn" sx={{ mr:{sm:3.5}, mb:{xs:2, sm:0} }}>
                                     See our services
                                 </Button>
@@ -28,25 +28,25 @@ const HeroSection = () => {
                                     See All Services{" "}
                                 </Typography>
                             </Box>
-                            <Typography variant="h2" sx={{ mb: 3 }} className="text_tertiary font_poppins">
+                            <Typography variant="h2" sx={{ mb: 2 }} className="text_tertiary font_poppins">
                                 Worked with 100+ Companies
                             </Typography>
-                            <Box sx={{ mb: { xs: "5%", lg: "20%" } }}>
+                            <Box sx={{ mb: { xs: "5%", lg: "10%" } }}>
                                 <Grid container>
-                                    <Grid item xs={12} lg={4} align="center">
+                                    <Grid item xs={12} lg={4}  sx={{display:"flex", justifyContent:{xs:"center", lg:"start"}}}>
                                         <img src={icon1} alt="logo icon" />
                                     </Grid>
-                                    <Grid item xs={12} lg={4} align="center" sx={{my:{xs:"5%", lg:"0"}}}>
+                                    <Grid item xs={12} lg={4}  sx={{my:{xs:"5%", lg:"0"}, display:"flex", justifyContent:{xs:"center", lg:"start"}}}>
                                         <img src={icon2} alt="logo icon" className="icon-padding" />
                                     </Grid>
-                                    <Grid item xs={12} lg={4} align="center">
+                                    <Grid item xs={12} lg={4} sx={{display:"flex", justifyContent:{xs:"center", lg:"start"}}}>
                                         <img src={icon3} alt="logo icon" />
                                     </Grid>
                                 </Grid>
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid itme xs={12} lg={6} sx={{ display: "flex", justifyContent: { xs: "center", xl: "normal" } }}>
+                    <Grid itme xs={12} lg={6} sx={{ display: "flex", justifyContent: { xs: "center" }, alignItems:"flex-end" }}>
                         <img src={main} alt="man-icon" className="img-fluid img1" />
                     </Grid>
                 </Grid>

@@ -25,7 +25,7 @@ const card = [
 
 const SoftwareSolution = () => {
     return (
-        <Box className="Software" sx={{ mt: 10, display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Box className="Software" sx={{ mt:{ md:10, xs:5}, display: "flex", justifyContent: "center", alignItems: "center" }}>
             <Container sx={{my:"5%"}}>
                 <Grid container>
                     <Grid item xs={12} md={6.5}>

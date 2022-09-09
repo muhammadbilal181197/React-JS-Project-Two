@@ -37,7 +37,7 @@
         font-size: 16px;
         color: black;
         border: none;
-        width: 342px;
+        max-width: 342px;
         height: 54px;
         padding-left: 30px;
         outline: none;
@@ -85,6 +85,10 @@
     .Footer {
         .text_primary {
             font-size: 35px;
+        }
+        .Input{
+            max-width: 250px;
+            height: 45px;
         }
     }
 }

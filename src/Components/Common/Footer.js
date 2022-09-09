@@ -15,7 +15,7 @@ const Footer = () => {
             <img src={icon1} alt="icon left" className="icon1" />
             <img src={icon2} alt="icon right" className="icon2" />
             <Box className="Foot" sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <Container sx={{ my: "4%" }}>
+                <Container sx={{ mt: {sm:"4%", xs:"5%"} , mb:"4%"}}>
                     <Grid container sx={{ pb: "6%" }}>
                         <Grid item xs={12} lg={4} sx={{ display: "flex", justifyContent: "center", alignItems: { xs: "center", lg: "start" }, flexDirection: "column", pb: { xs: 8, lg: "0" } }}>
                             <Box>

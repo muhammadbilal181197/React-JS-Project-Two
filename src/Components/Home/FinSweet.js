@@ -1,13 +1,43 @@
 import { Box, Container, Grid, Typography, Stack, Avatar } from "@mui/material";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "../../Styles/Home/FinSweet.scss";
 import ceo from "../../Images/ceo-icon.svg";
 import videoclip from "../../Images/video.mp4";
 import play from "../../Images/play.svg";
+import pause from "../../Images/pause.png";
 
 const FinSweet = () => {
+    const VideoInput = useRef();
+    const PlayInput = useRef();
+    const PauseInput = useRef();
+    const playtext = useRef();
+    const pausetext = useRef();
+
+    const PlayVideo = () => {
+        VideoInput.current.play();
+        PlayInput.current.style.display = "none";
+        PauseInput.current.style.display = "block";
+        playtext.current.style.display="none"
+        pausetext.current.style.display="block"
+    };
+    const PauseVideo = () => {
+        VideoInput.current.pause();
+        PlayInput.current.style.display = "block";
+        PauseInput.current.style.display = "none";
+        playtext.current.style.display="block"
+        pausetext.current.style.display="none"
+    };
+
+    useEffect(() => {
+        PlayInput.current.style.display = "block";
+        PauseInput.current.style.display = "none";
+        playtext.current.style.display="block"
+        pausetext.current.style.display="none"
+        
+    });
+
     return (
-        <Box sx={{ mt: 10, mb: 10 }} className="FinSweet">
+        <Box sx={{ mt: { lg: 10, xs: 5 } }} className="FinSweet">
             <Container>
                 <Grid container>
                     <Grid xs={12} lg={6}>
@@ -31,14 +61,20 @@ const FinSweet = () => {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid xs={12} lg={6} className="iframe">
-                        <Box className="video_parent" sx={{}}>
-                            <video width="560" height="450" controls className="video" sx={{ borderRadius: "30px" }}>
-                            <Typography variant="body1" className="font_poppins play-text">
-                                Play Video
+                    <Grid xs={12} lg={6} className="videoPlayer">
+                        <Box className="position" sx={{ display: "flex", alignItems: "center" }}>
+                            <img src={play} ref={PlayInput} alt="play-icon" className="playicon" onClick={PlayVideo} />
+                            <img src={pause} ref={PauseInput} alt="play-icon" className="pauseicon" onClick={PauseVideo} />
+                            <Typography variant="body2" className="video-text font_poppins" ref={playtext} sx={{ pl: 2 }}>
+                                Play
                             </Typography>
+                            <Typography variant="body2" className="video-text font_poppins" ref={pausetext} sx={{ pl: 2 }}>
+                                Pause
+                            </Typography>
+                        </Box>
+                        <Box className="video_parent" sx={{}}>
+                            <video ref={VideoInput} className="video" >
                                 <source src={videoclip} />
-                                <img src={play} alt="play icon" className="playicon" />
                             </video>
                         </Box>
                     </Grid>

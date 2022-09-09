@@ -26,7 +26,7 @@ const card = [
 
 const Companies = () => {
     return (
-        <Box className="Companies" sx={{ mt:{xs:5 ,lg:10}, mb: 10 }}>
+        <Box className="Companies" sx={{ mt:{xs:5 ,lg:10} }}>
             <Container>
                 <Typography variant="h2" className="font_poppins text_primary" sx={{ mb: {xs:2,md:3} }}>
                     We help more than 1500 companies from all sectors
