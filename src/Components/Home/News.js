@@ -28,7 +28,7 @@ const card = [
 
 const News = () => {
     return (
-        <Box className="News" sx={{ display: "flex", justifyContent: "center", alignItems:"center" }}>
+        <Box className="News" sx={{ display: "flex", justifyContent: "center", alignItems:"center", mt:{xs:5,lg:10}}}>
             <Container sx={{my:"5%"}}>
                 <Typography variant="h2" className="font_poppins text_primary" sx={{ mb:{lg: 3} }}>
                     Latest Blog & News

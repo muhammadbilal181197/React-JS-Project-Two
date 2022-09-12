@@ -1,9 +1,8 @@
 .hero-section {
     width: 100vw;
-    // height: 674px;
     height: auto;
     background: #dceaf5;
-    .img1{
+    .img1 {
         max-width: 100%;
         height: auto;
     }
@@ -27,7 +26,6 @@
     .services_font {
         font-weight: 600;
         font-size: 16px;
-        // line-height: 106.5%;
         color: #1d3444;
     }
     .services_btn {
@@ -45,9 +43,6 @@
         max-width: 100%;
         height: auto;
     }
-    // .icon-padding {
-    //     padding: 0 30px;
-    // }
 }
 body,
 html {
@@ -62,7 +57,6 @@ html {
     .hero-section {
         .text_primary {
             font-size: 45px;
-
         }
     }
 }
@@ -70,7 +64,6 @@ html {
     .hero-section {
         .text_primary {
             font-size: 35px;
-
         }
     }
 }

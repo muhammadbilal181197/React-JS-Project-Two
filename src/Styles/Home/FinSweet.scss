@@ -21,10 +21,10 @@
         font-size: 18px;
         color: #f58a07;
     }
-    .video_parent {
-        display: flex;
-        justify-content: center;
-    }
+    // .video_parent {
+    //     display: flex;
+    //     justify-content: center;
+    // }
 
     // video {
     //     border-radius: 20px;
@@ -33,16 +33,14 @@
     // }
     .videoPlayer {
         position: relative;
-        border-radius: 20px;
+        // border-radius: 20px;
     }
 
     .videoPlayer .position {
         position: absolute;
         z-index: 1;
-        width: 50px;
-        bottom: 90px;
+        bottom: 40px;
         left: 30px;
-        height: 50px;
         color: white;
     }
     .pauseicon,
@@ -58,12 +56,15 @@
 
     .video_parent {
         z-index: -1;
-        max-width: 560px;
-        min-height: 440px;
-        overflow: hidden;
+        // max-width: 560px;
+        // min-height: 440px;
+        // overflow: hidden;
         .video {
-            min-width: 100%;
-            min-height: 100%;
+            width: 100%;
+            position: relative;
+            border-radius: 20px;
+            margin-top: 50px;
+            // min-height: 100%;
         }
     }
 }
@@ -71,16 +72,16 @@
 @media (max-width: 1536px) {
 }
 @media (max-width: 1199px) {
-    .FinSweet {
-        // .video {
-        //     margin-top: 30px;
-        //     width: 80vw;
-        //     border-radius: 15px;
-        // }
-        .videoPlayer .position {
-            bottom: 60;
-           }
-    }
+    // .FinSweet {
+    // .video {
+    //     margin-top: 30px;
+    //     width: 80vw;
+    //     border-radius: 15px;
+    // }
+    // .videoPlayer .position {
+    //     bottom: 60;
+    //    }
+    // }
 }
 @media (max-width: 900px) {
     .FinSweet {
@@ -93,8 +94,6 @@
             max-width: 100%;
             text-align: center;
         }
-       
-        
     }
 }
 @media (max-width: 600px) {
@@ -102,8 +101,14 @@
         .text_primary {
             font-size: 35px;
         }
-        .video {
-            margin-top: -30px;
+        .videoPlayer .position {
+            bottom: 20px;
+            left: 20px;
         }
+        .pauseicon,
+    .playicon {
+        width: 30px;
+        height: 30px;
+    }
     }
 }

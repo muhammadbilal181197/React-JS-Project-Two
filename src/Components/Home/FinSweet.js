@@ -37,14 +37,14 @@ const FinSweet = () => {
     });
 
     return (
-        <Box sx={{ mt: { lg: 10, xs: 5 } }} className="FinSweet">
+        <Box sx={{ mt: { lg: 5, xs: 5 } }} className="FinSweet">
             <Container>
                 <Grid container>
                     <Grid xs={12} lg={6}>
                         <Typography variant="h1" className="font_poppins text_primary" sx={{ mt: { lg: "10%", xs: "0" } }}>
                             Finsweet was a dream to work with
                         </Typography>
-                        <Typography variant="body1" className="font_poppins text_secondary" sx={{ mt: { lg: "4%", xs: "2%" }, mb: { lg: "8%", xs: "4%" } }}>
+                        <Typography variant="body1" className="font_poppins text_secondary" sx={{ mt: { lg: "3%", xs: "2%" }, mb: { lg: "5%", xs: "4%" } }}>
                             Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel. Pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus eleifend nec felis vel auctor.
                         </Typography>
                         <Box sx={{ display: "flex", gap: 2, justifyContent: { xs: "center", md: "start" } }} className="tertiary_padding">
@@ -65,10 +65,10 @@ const FinSweet = () => {
                         <Box className="position" sx={{ display: "flex", alignItems: "center" }}>
                             <img src={play} ref={PlayInput} alt="play-icon" className="playicon" onClick={PlayVideo} />
                             <img src={pause} ref={PauseInput} alt="play-icon" className="pauseicon" onClick={PauseVideo} />
-                            <Typography variant="body2" className="video-text font_poppins" ref={playtext} sx={{ pl: 2 }}>
+                            <Typography variant="body2" className="video-text font_poppins" ref={playtext} sx={{ pl:{sm:2 , xs:0.5} }}>
                                 Play
                             </Typography>
-                            <Typography variant="body2" className="video-text font_poppins" ref={pausetext} sx={{ pl: 2 }}>
+                            <Typography variant="body2" className="video-text font_poppins" ref={pausetext} sx={{ pl:{sm:2 , xs:0.5} }}>
                                 Pause
                             </Typography>
                         </Box>
