@@ -8,6 +8,19 @@ import icon3 from "../../Images/icon3.svg";
 import main from "../../Images/main1.png";
 
 const HeroSection = () => {
+    const [State, setState] = React.useState("services_btn");
+    const [State2, setState2] = React.useState("services_font");
+
+    const Change1 = () => {
+        setState("services_btn");
+        setState2("services_font");
+    };
+
+    const Change2 = () => {
+        setState2("services_btn");
+        setState("services_font");
+    };
+
     return (
         <Box className="hero-section">
             <Container sx={{ pt: { xs: "5%", sm: "2%" } }}>
@@ -21,12 +34,12 @@ const HeroSection = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
                             </Typography>
                             <Box sx={{ display: "flex", alignItems: "center", mb: { xs: 3, lg: 5 }, flexDirection: { xs: "column", sm: "row" } }}>
-                                <Button variant="contained" className="font_poppins services_btn" sx={{ mr: { sm: 3.5 }, mb: { xs: 2, sm: 0 } }}>
+                                <Button variant="contained" onClick={Change1} className={State} sx={{ mr: { sm: 3.5 }, mb: { xs: 2, sm: 0 } }}>
                                     See our services
                                 </Button>
-                                <Typography variant="h2" className="services_font font_poppins">
+                                <Button variant="contained" onClick={Change2} className={State2}>
                                     See All Services
-                                </Typography>
+                                </Button>
                             </Box>
                             <Typography variant="h2" sx={{ mb: 2 }} className="text_tertiary font_poppins">
                                 Worked with 100+ Companies
